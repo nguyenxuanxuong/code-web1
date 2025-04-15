@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Your Company Name</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="Aboutus.css">
+
+    <!-- Font Awesome CDN (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts (Example: Montserrat for headings, Open Sans for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Your Company Name</a>
+                <!-- Or use an image logo: <img src="your-logo.png" alt="Your Company Name Logo"> -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Aboutus.html" class="active">About Us</a></li>
+                    <li><a href="#">Services</a></li> <!-- Or "What We Do", "Solutions", "Businesses" -->
+                    <li><a href="#">Impact</a></li>   <!-- Or "Responsibility", "ESG" -->
+                    <li><a href="#">News</a></li>     <!-- Or "Insights", "Blog" -->
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                 <button class="search-icon" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                 </button>
+                 <!-- Add other actions if needed, e.g., Login -->
+                <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                    <!-- Icon will be changed to fa-times via JS -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content container">
+                <h1 class="animate-on-scroll fade-in-up">About Us</h1>
+                <p class="animate-on-scroll fade-in-up delay-1">Learn about our mission, values, and the people driving our success forward.</p>
+                <!-- Optional button: <a href="#who-we-are" class="cta-button animate-on-scroll fade-in-up delay-2">Discover More</a> -->
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section id="who-we-are" class="content-section bg-light">
+            <div class="container">
+                <h2 class="animate-on-scroll fade-in">Serving with purpose</h2>
+                <p class="section-intro animate-on-scroll fade-in delay-1">
+                    Supporting global and local economies by delivering value for our shareholders and investing in the progress of our clients and our employees. Our firm is only as strong as the communities we serve, and we are dedicated to creating opportunities for financial growth worldwide.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item animate-on-scroll slide-in-left">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Global Presence</h3>
+                        <p>Operating in 10+ countries</p>
+                    </div>
+                    <div class="stat-item animate-on-scroll slide-in-bottom">
+                         <i class="fas fa-users"></i>
+                        <!-- Use either text h3 or span.stat-number based on preference -->
+                        <!-- <h3>15,000+</h3> -->
+                        <span class="stat-number">15,000+</span>
+                        <p>Dedicated Professionals</p>
+                    </div>
+                    <div class="stat-item animate-on-scroll slide-in-right">
+                        <i class="fas fa-handshake"></i>
+                        <!-- <h3>5,000+</h3> -->
+                        <span class="stat-number">5,000+</span>
+                        <p>Valued Clients Served</p>
+                    </div>
+                     <div class="stat-item animate-on-scroll slide-in-bottom delay-1">
+                        <i class="fas fa-chart-line"></i>
+                        <!-- <h3>25+ Years</h3> -->
+                         <span class="stat-number">25+</span>
+                        <p>Years Industry Experience</p>
+                    </div>
+                </div>
+                 <!-- Optional Button -->
+                 <!-- <div class="text-center animate-on-scroll fade-in-up delay-2" style="margin-top: 3rem;">
+                     <a href="#our-businesses" class="cta-button">Explore Our Businesses</a>
+                 </div> -->
+            </div>
+        </section>
+
+        <!-- What We Do Section -->
+        <section id="what-we-do" class="content-section">
+             <div class="container">
+                 <h2 class="animate-on-scroll fade-in">225 years of lasting progress</h2>
+                 <div class="card-grid cols-2"> <!-- Example: 2 columns grid -->
+                     <div class="card animate-on-scroll fade-in-up">
+                         <div class="card-icon"><i class="fas fa-cogs"></i></div>
+                         <h3>Business principles</h3>
+                         <p>These four principles are fundamental to our success and guide our efforts within the firm and around the world.</p>
+                         <a href="#" class="learn-more">Learn More →</a>
+                     </div>
+                     <div class="card animate-on-scroll fade-in-up delay-1">
+                         <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+                         <h3>Our leadership</h3>
+                         <p>Learn more about the people upholding our values and moving our organization forward.</p>
+                         <a href="#" class="learn-more">Learn More →</a>
+                     </div>
+                     <div class="card animate-on-scroll fade-in-up delay-2">
+                          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                         <h3>Art collection</h3>
+                         <p>Connecting clients and communities with some of the most inspiring pieces of art from around the world.</p>
+                         <a href="#" class="learn-more">Learn More →</a>
+                     </div>
+                      <div class="card animate-on-scroll fade-in-up delay-3">
+                          <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
+                         <h3>Suppliers</h3>
+                         <p>Building strong relationships with diverse suppliers to serve our clients, shareholders, communities and employees more efficiently.</p>
+                         <a href="#" class="learn-more">Learn More →</a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- Our History Section -->
+        <section id="our-history" class="content-section bg-light">
+            <div class="container history-container">
+                 <div class="history-image animate-on-scroll slide-in-left">
+                     <img src="placeholder-history.jpg" alt="Company history montage or key building">
+                 </div>
+                <div class="history-content animate-on-scroll slide-in-right">
+                    <h2>Our History</h2>
+                    <p>Discover the history of our firm and how we’re building on our past to shape the future.</p>
+                    <a href="#" class="cta-button secondary animate-on-scroll fade-in-up">Explore our timeline</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Leadership Section -->
+        <section id="leadership" class="content-section">
+             <div class="container text-center">
+                 <h2 class="animate-on-scroll fade-in">Business areas</h2>
+                 <p class="section-intro animate-on-scroll fade-in delay-1">Meet the experienced leaders guiding [Your Company Name] towards a successful future.</p>
+                 <div class="leadership-grid">
+                     <div class="leader-profile animate-on-scroll fade-in-up">
+                         <img src="image/anh8.png" alt="Leader 1 Photo">
+                         <h4>Asset & Wealth Management</h4>
+                         <p>Providing strategic solutions for the full spectrum of asset classes for individuals, advisors and institutions.</p>
+                     </div>
+                     <div class="leader-profile animate-on-scroll fade-in-up delay-1">
+                         <img src="image/anh9.png" alt="Leader 2 Photo">
+                         <h4>Commercial & Investment Banking</h4>
+                         <p>Providing strategic advice, raising capital, managing risk, extending liquidity, delivering payment solutions and safeguarding assets in markets around the world.</p>
+                     </div>
+                      <div class="leader-profile animate-on-scroll fade-in-up delay-2">
+                         <img src="image/anh10.png" alt="Leader 3 Photo">
+                         <h4>Consumer & Community Banking</h4>
+                         <p>Helping 80 million individuals, families and businesses grow and thrive through banking, saving, investing and more.</p>
+                     </div>
+                     <div class="leader-profile animate-on-scroll fade-in-up delay-3">
+                         <img src="image/anh11.png" alt="Leader 4 Photo">
+                         <h4>Technology</h4>
+                         <p>Creating cutting-edge solutions that impact millions of customers and organizations—powered by our 63,000 technologists.</p>
+                     </div>
+                 </div>
+                 <a href="#" class="cta-button animate-on-scroll fade-in-up delay-4" style="margin-top: 2.5rem;">View Full Leadership Team</a>
+             </div>
+        </section>
+
+        <!-- Corporate Responsibility / Impact Section -->
+        <section id="responsibility" class="content-section bg-primary text-light">
+            <div class="container text-center">
+                <h2 class="animate-on-scroll fade-in">Our Impact</h2>
+                <p class="section-intro animate-on-scroll fade-in delay-1">We believe business success and societal progress go hand-in-hand. We're committed to making a positive impact on the environment, our communities, and through responsible governance.</p>
+                <div class="commitments-grid"> <!-- Can reuse stats-grid or define commitments-grid if needed -->
+                     <div class="commitment-item animate-on-scroll slide-in-left">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Sustainability</h3>
+                        <p>Minimizing our environmental footprint.</p>
+                    </div>
+                    <div class="commitment-item animate-on-scroll slide-in-bottom">
+                        <i class="fas fa-people-carry"></i>
+                        <h3>Community</h3>
+                        <p>Investing in local communities and education.</p>
+                    </div>
+                    <div class="commitment-item animate-on-scroll slide-in-right">
+                         <i class="fas fa-balance-scale"></i>
+                        <h3>Governance</h3>
+                        <p>Upholding high ethical standards.</p>
+                    </div>
+                </div>
+                 <a href="#" class="cta-button white animate-on-scroll fade-in-up delay-2" style="margin-top: 2.5rem;">Learn About Our ESG Efforts</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-columns">
+                 <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#who-we-are">Who We Are</a></li>
+                        <li><a href="#our-history">History</a></li>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="#responsibility">Impact/Values</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <!-- <li><a href="#">Solutions</a></li> -->
+                        <li><a href="#">News & Insights</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                         <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Connect</h4>
+                     <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p style="margin-top: 1rem; color: #adb5bd; font-size: 0.9rem;">Follow us on social media.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> [Your Company Name]. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="Aboutus.js"></script>
+</body>
+</html>

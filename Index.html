@@ -1,212 +1,356 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Xuân Cường - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JPMorgan Chase & Co. | Modern Homepage Clone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script> <!-- Thay 'your-fontawesome-kit-id.js' bằng ID kit Font Awesome của bạn nếu muốn dùng icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <div class="container">
-                <a href="#" class="nav-logo">NXC</a>
-                <ul class="nav-menu">
-                    <li><a href="#about">Giới thiệu</a></li>
-                    <li><a href="#skills">Kỹ năng</a></li>
-                    <li><a href="#experience">Kinh nghiệm</a></li>
-                    <li><a href="#education">Học vấn</a></li>
-                    <li><a href="#goals">Mục tiêu</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
 
-        <div class="hero-content container">
-             <div class="hero-text">
-                <h1>NGUYỄN XUÂN CƯỜNG</h1>
-                <p class="subtitle">Chuyên ngành <span class="highlight">Mạng máy tính</span></p>
-                <div class="typing-effect">
-                    <span>Sinh viên IT đam mê công nghệ & AI...</span>
-                </div>
-                 <a href="#contact" class="cta-button">Liên Hệ Ngay</a>
+    <!-- ==================== Header ==================== -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <!-- Improved Text Placeholder Logo -->
+                <span class="logo-text">JPMorganChase</span>
+                 <!-- Replace above span with your actual SVG/Image logo -->
+                 <!-- <img src="your-logo.svg" alt="JPMorganChase Logo"> -->
+            </a>
+            <nav id="main-nav">
+                <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars open-icon"></i>
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                 </button>
+                <ul id="nav-links">
+                    <li><a href="Aboutus.html">About us</a></li>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Communities</a></li>
+                    <li><a href="#">Institute</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Newsroom</a></li>
+                    <li class="search-item-desktop"><a href="#" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <!-- Mobile Only Actions -->
+                    <li class="header-actions-mobile">
+                        <a href="#" class="btn btn-outline">Sign In</a>
+                        <a href="#" aria-label="Search" class="mobile-search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Sign In Button separate on Desktop -->
+            <div class="header-actions-desktop">
+                 <a href="#" class="btn btn-outline">Sign In</a>
             </div>
-            <div class="hero-image">
-                <img src="fileanh.jpg" alt="Ảnh đại diện Nguyễn Xuân Cường" class="profile-pic">
-                 <div class="tech-glow"></div>
-            </div>
-        </div>
-         <div class="scroll-down-indicator">
-            <a href="#about"><span></span><span></span><span></span></a>
         </div>
     </header>
 
     <main>
-        <section id="about" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">Thông Tin Cá Nhân</h2>
-                 <div class="about-grid">
-                    <div class="about-image">
-                <img src="fileanh.jpg" alt="Ảnh đại diện Nguyễn Xuân Cường" class="profile-pic">
-                    </div>
-                    <div class="about-details">
-                        <ul>
-                            <li><i class="fas fa-calendar-alt icon"></i><strong>Ngày sinh:</strong> 12/02/2003</li>
-                            <li><i class="fas fa-phone-alt icon"></i><strong>Số điện thoại:</strong> <a href="tel:0772974735">0772974735</a></li>
-                            <li><i class="fas fa-envelope icon"></i><strong>Email:</strong> <a href="mailto:nguyenxuancuong12022003@gmail.com">nguyenxuancuong12022003@gmail.com</a></li>
-                            <li><i class="fas fa-map-marker-alt icon"></i><strong>Địa chỉ:</strong> Giáp Tây, Hương Toàn, Hương Trà, TP. Huế</li>
-                            <li><i class="fab fa-facebook-f icon"></i><strong>Facebook:</strong> <a href="https://www.facebook.com/nguyen.xuan.cuong.359456" target="_blank" rel="noopener noreferrer">facebook.com/nguyen.xuan.cuong.359456</a></li>
-                        </ul>
-                         <h3>Sở thích:</h3>
-                        <p>Điền Kinh, bóng đá, du lịch.</p>
+        <!-- ==================== Hero Section ==================== -->
+        <section class="hero">
+            <div class="hero-background">
+                 <!-- Background image set in CSS -->
+            </div>
+            <div class="hero-overlay"></div> <!-- Overlay div -->
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="animate-on-scroll fade-in-up">Investing in progress, powering potential</h1>
+                    <p class="animate-on-scroll fade-in-up delay-1">We leverage our expertise, data, capital and scale to help build stronger communities and economies worldwide.</p>
+                    <div class="hero-buttons animate-on-scroll fade-in-up delay-2">
+                        <a href="#" class="btn btn-primary">Learn About Our Impact</a>
+                        <a href="#" class="btn btn-secondary">Explore Our Businesses</a>
                     </div>
                 </div>
             </div>
+             <!-- Scroll Down Indicator -->
+             <a href="#our-focus" class="scroll-down-indicator animate-on-scroll fade-in delay-3" aria-label="Scroll down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
         </section>
 
-        <section id="skills" class="section alt-bg">
-            <div class="container reveal">
-                <h2 class="section-title">Kỹ Năng</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-users icon-large"></i>
-                        <h3>Làm việc nhóm</h3>
-                        <p>Kỹ năng hợp tác hiệu quả trong các dự án.</p>
+        <!-- ==================== Our Focus Section (Intro Card) ==================== -->
+        <section id="our-focus" class="info-section section-padding bg-light">
+            <div class="container">
+                 <div class="focus-intro-card animate-on-scroll fade-in">
+                    <div class="focus-image-wrapper">
+                         <img src="image/anh1.png" alt="Serving with purpose illustration">
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-lightbulb icon-large"></i>
-                        <h3>Giải quyết vấn đề</h3>
-                        <p>Phân tích và đưa ra giải pháp cho các thách thức.</p>
+                    <div class="focus-content">
+                        <h2 class="section-title--left">Serving with purpose</h2>
+                        <p>We are united by a purpose that weaves together what we value and how we do business and deliver results for the clients, colleagues and communities we serve.</p>
+                        <a href="#" class="learn-more">See how we do business <i class="fa-solid fa-arrow-right-long"></i></a>
                     </div>
-                     <div class="skill-card">
-                        <i class="fab fa-linux icon-large"></i>
-                        <h3>Kali Linux & VirtualBox</h3>
-                        <p>Sử dụng thành thạo máy ảo và hệ điều hành Kali Linux.</p>
-                    </div>
-                     <div class="skill-card">
-                        <i class="fas fa-code icon-large"></i>
-                        <h3>Kiến thức Lập trình</h3>
-                         <p>Nền tảng về ngôn ngữ lập trình, sẵn sàng học hỏi công nghệ mới.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-shield-alt icon-large"></i>
-                        <h3>Bảo mật Web Cơ bản</h3>
-                        <p>Sử dụng NMAP, Burp Suite để quét lỗ hổng.</p>
-                    </div>
-                     <div class="skill-card">
-                        <i class="fas fa-network-wired icon-large"></i>
-                        <h3>Mô phỏng Mạng</h3>
-                        <p>Sử dụng Cisco Packet Tracer để thiết kế và mô phỏng.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="goals" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">Mục Tiêu Nghề Nghiệp</h2>
-                <div class="goals-content">
-                    <!-- Thay đổi cấu trúc ở đây -->
-                    <div class="goal-item">
-                        <i class="fas fa-bullseye icon"></i>
-                        <p>Mong muốn được thực tập tại <strong>SatoriWaveAI</strong>, một môi trường chuyên nghiệp để vận dụng kiến thức đã học, phát triển kỹ năng lập trình và làm việc nhóm.</p>
-                    </div>
-                    <div class="goal-item">
-                        <i class="fas fa-brain icon"></i>
-                        <p>Vận dụng các kiến thức về <strong>AI</strong> để có thể áp dụng vào làm những dự án thực tế, đóng góp vào sự phát triển của công ty.</p>
-                    </div>
-                    <!-- Kết thúc thay đổi -->
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section alt-bg">
-            <div class="container reveal">
-                <h2 class="section-title">Học Vấn</h2>
-                 <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-                        <div class="timeline-content">
-                            <h3>Trường Đại học Khoa Học - Đại học Huế</h3>
-                            <p><strong>Khoa:</strong> Công nghệ thông tin</p>
-                            <p><strong>Chuyên ngành:</strong> Mạng máy tính</p>
-                            <p><strong>Khóa:</strong> 2021 - 2025</p>
-                            <span class="timeline-date">2021 - Hiện tại</span>
-                        </div>
-                    </div>
-                    <!-- Thêm các mốc học vấn khác nếu có -->
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <div class="container reveal">
-                <h2 class="section-title">Kinh Nghiệm & Dự Án</h2>
-                <div class="experience-list">
-                   <div class="experience-item">
-                        <i class="fas fa-project-diagram icon-exp"></i>
-                        <div>
-                            <h3>Dự án nhỏ (Android, Web App)</h3>
-                            <p>Tham gia thực hiện các đề tài, dự án nhỏ trong quá trình học, rèn luyện kỹ năng lập trình và tư duy giải quyết vấn đề.</p>
-                        </div>
-                    </div>
-                     <div class="experience-item">
-                         <i class="fas fa-search-location icon-exp"></i>
-                         <div>
-                            <h3>Quét & Tấn công Web (Thực hành)</h3>
-                            <p>Sử dụng các công cụ như NMAP, Burp Suite để thực hành quét và xác định các lỗ hổng bảo mật cơ bản trên trang web mô hình.</p>
-                         </div>
-                    </div>
-                    <div class="experience-item">
-                         <i class="fas fa-sitemap icon-exp"></i>
-                         <div>
-                            <h3>Mô phỏng hệ thống mạng</h3>
-                            <p>Sử dụng công cụ Cisco Packet Tracer để thiết kế, cấu hình và mô phỏng hoạt động của các hệ thống mạng máy tính.</p>
-                         </div>
-                    </div>
-                     <!-- Thêm kinh nghiệm khác nếu có -->
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section contact-section">
-            <div class="container reveal">
-                <h2 class="section-title">Liên Hệ</h2>
-                <p class="contact-subtitle">Hãy kết nối hoặc gửi cho tôi một lời nhắn!</p>
-                 <div class="contact-methods">
-                     <a href="mailto:nguyenxuancuong12022003@gmail.com" class="contact-button email">
-                        <i class="fas fa-envelope"></i> Gửi Email
-                    </a>
-                     <a href="tel:0772974735" class="contact-button phone">
-                        <i class="fas fa-phone-alt"></i> Gọi Điện Thoại
-                    </a>
-                     <a href="https://www.facebook.com/nguyen.xuan.cuong.359456" target="_blank" rel="noopener noreferrer" class="contact-button facebook">
-                         <i class="fab fa-facebook-f"></i> Facebook
-                    </a>
                  </div>
             </div>
         </section>
+
+        <!-- ==================== Our Businesses Section ==================== -->
+        <section id="our-businesses" class="info-section section-padding">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">Our Businesses</h2>
+                <div class="grid grid-cols-3">
+                    <!-- Card 1: CIB -->
+                    <div class="card animate-on-scroll fade-in">
+                        <div class="card-image-wrapper">
+                             <img src="image/anh2.png" alt="Corporate & Investment Bank">
+                        </div>
+                        <div class="card-content">
+                            <h3>Corporate & Investment Bank</h3>
+                            <p>Helping corporations, governments and institutions meet their strategic goals globally.</p>
+                            <a href="#" class="learn-more">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card 2: Asset & Wealth Management (Placeholder) -->
+                    <div class="card animate-on-scroll fade-in delay-1">
+                        <div class="card-image-wrapper">
+                             <img src="image/Screenshot.png" alt="Asset & Wealth Management">
+                        </div>
+                        <div class="card-content">
+                            <h3>Our 2024 Annual Report</h3>
+                            <p>Our latest report and letters to shareholders, released April 2025.</p>
+                            <a href="#" class="learn-more">Read the report <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                     <!-- Card 3: Commercial Banking (Placeholder) -->
+                     <div class="card animate-on-scroll fade-in delay-2">
+                        <div class="card-image-wrapper">
+                             <img src="image/anh7.png" alt="Commercial Banking">
+                        </div>
+                        <div class="card-content">
+                            <h3>Commercial Banking</h3>
+                            <p>Providing financial solutions to businesses, municipalities and non-profits.</p>
+                            <a href="#" class="learn-more">Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== Dedicated Growth Section (Moved) ==================== -->
+        <section id="dedicated-growth" class="info-section section-padding bg-light">
+            <div class="container dedicated-growth-content">
+                <div class="growth-header-row animate-on-scroll fade-in">
+                    <div class="growth-heading-wrapper">
+                        <h2 class="growth-main-heading">Dedicated to sustained growth</h2>
+                    </div>
+                    <div class="growth-description-wrapper">
+                        <p class="growth-description">We leverage our business and expertise to help address economic and societal challenges, supporting our clients and providing targeted capital to contribute to an inclusive, sustainable economy.</p>
+                    </div>
+                </div>
+
+                <div class="impact-communities-row animate-on-scroll fade-in delay-1">
+                    <div class="impact-item">
+                        <h3>Our impact</h3>
+                        <p>Using our deep industry knowledge to create opportunity and build for the future.</p>
+                        <a href="#" class="learn-more impact-link">Learn about our impact <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="communities-item">
+                        <h3>Our communities</h3>
+                        <p>Making a difference in the communities where we live and work through long-term business and philanthropic efforts.</p>
+                        <a href="#" class="learn-more communities-link">Explore our communities <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== Impact Section (Split Layout + News Grid) ==================== -->
+        <section class="info-section section-padding">
+            <div class="container">
+                 <h2 class="section-title animate-on-scroll fade-in">See impact in action</h2>
+
+                 <!-- Split Layout -->
+                 <div class="grid grid-cols-2 align-items-center gap-large impact-split-layout">
+                     <div class="animate-on-scroll fade-in-left">
+                         <img src="image/anh3.png" alt="Community Investment Image" class="img-shadow rounded">
+                     </div>
+                     <div class="text-content animate-on-scroll fade-in-right delay-1">
+                         <h3>One Entrepreneur Helping to Revitalize Detroit</h3>
+                         <p>How JPMorgan Chase is helping small business owner and local developer Marcus Jones revitalize his neighborhood and develop Detroit’s workforce for the city’s next chapter.</p>
+                         <a href="#" class="btn btn-primary">Read more</a>
+                     </div>
+                 </div> <!-- End Split Layout Grid -->
+
+                 <!-- News Articles Grid -->
+                 <div class="grid grid-cols-3 impact-articles-grid">
+                     <article class="card card-article animate-on-scroll fade-in">
+                        <div class="card-image-wrapper">
+                           <img src="image/anh4.png" alt="Training for the Future of Work">
+                        </div>
+                       <div class="card-content">
+                           <p class="card-category">Workforce Development</p>
+                           <h3>Training for the Future of Work</h3>
+                           <p>Companies are investing in strategic skills training and workforce initiatives to find, attract, and train young people...</p>
+                           <a href="#" class="learn-more">Read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                       </div>
+                   </article>
+
+                   <article class="card card-article animate-on-scroll fade-in delay-1">
+                    <div class="card-image-wrapper">
+                       <img src="image/anh5.png" alt="Veteran working at JPMorgan Chase">
+                    </div>
+                   <div class="card-content">
+                       <p class="card-category">Military & Veterans</p>
+                       <h3>Bringing Military Skills to JPMorgan Chase</h3>
+                       <p>Over the last decade, JPMorgan Chase has focused on supporting the military community and their families...</p>
+                       <a href="#" class="learn-more">Read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                   </div>
+                    </article>
+
+                    <article class="card card-article animate-on-scroll fade-in delay-2">
+                        <div class="card-image-wrapper">
+                           <img src="image/anh6.png" alt="People working in Baltimore call center">
+                        </div>
+                       <div class="card-content">
+                           <p class="card-category">Community Development</p>
+                           <h3>Expanding Employment in Baltimore</h3>
+                           <p>A new virtual call center—inspired by a similar model in Detroit—is creating jobs and helping employees start their career...</p>
+                           <a href="#" class="learn-more">Read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                       </div>
+                    </article>
+                 </div><!-- End News Articles Grid -->
+            </div>
+        </section>
+
+        <!-- ==================== News & Stories Section ==================== -->
+        <section class="info-section section-padding bg-light">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in">In the news</h2>
+                <div class="grid grid-cols-3">
+                    <!-- Story 1 -->
+                    <article class="card card-article--text-only animate-on-scroll fade-in">
+                        <div class="card-content">
+                            <p class="card-category">Awards & Recognition</p>
+                            <h3>J.P. Morgan Advisors Hit New Milestone on Forbes List</h3>
+                            <p>Nearly 300 advisors honored as the top advisors in their states, demonstrating commitment to client success.</p>
+                            <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+                    <!-- Story 2 -->
+                    <article class="card card-article--text-only animate-on-scroll fade-in delay-1">
+                        <div class="card-content">
+                            <p class="card-category">Healthcare Innovation</p>
+                            <h3>Morgan Health Invests in Venteur for Health Benefits</h3>
+                            <p>Investment aims to promote consumer choice and affordability in employer health benefits, especially for SMBs.</p>
+                            <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+                    <!-- Story 3 -->
+                    <article class="card card-article--text-only animate-on-scroll fade-in delay-2">
+                        <div class="card-content">
+                            <p class="card-category">Financial Education</p>
+                            <h3>New Program Empowers College Students Financially</h3>
+                            <p>MSFCP.org combines financial coaching and education to improve students’ credential completion and financial health.</p>
+                            <a href="#" class="learn-more">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+                        </div>
+                    </article>
+                </div>
+                 <div class="text-center animate-on-scroll fade-in" style="margin-top: 60px;"> <!-- Increased margin -->
+                     <a href="#" class="btn btn-secondary">View All News & Stories</a>
+                 </div>
+            </div>
+        </section>
+
+         <!-- ==================== Careers Section (CTA) ==================== -->
+        <section class="info-section bg-gradient section-padding text-center">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll fade-in light-text">JPMorganChase</h2>
+                <p class="animate-on-scroll fade-in delay-1 light-text section-intro">Join a global team dedicated to making a difference. Explore opportunities across our businesses and functions, and contribute to shaping the future of finance.</p>
+                <a href="#" class="btn btn-light animate-on-scroll fade-in delay-2">Search Careers</a>
+            </div>
+         </section>
+
     </main>
 
-    <footer class="footer">
+    <!-- ==================== Footer ==================== -->
+    <footer id="main-footer">
         <div class="container">
-            <p>© 2024 Nguyễn Xuân Cường. Thiết kế với <i class="fas fa-heart"></i>.</p>
-            <!-- Thêm link mạng xã hội khác nếu muốn -->
-             <div class="social-links">
-                <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
-                <!-- <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-column">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">How we business</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Awards & recognition</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Supplier</a></li>
+                        <li><a href="#">Governance</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Art collection</a></li>
+                        <li><a href="#">Human rights</a></li>
+                        <li><a href="#">Diversity, opportunity & inclusion</a></li>
+                    </ul>
+                </div>
+                 <!-- Column 2 -->
+                 <div class="footer-column">
+                    <h4>Impact</h4>
+                    <ul>
+                        <li><a href="#">Business growth</a></li>
+                        <li><a href="#">Careers and skills</a></li>
+                        <li><a href="#">Community development</a></li>
+                        <li><a href="#">Environmental sustainability</a></li>
+                        <li><a href="#">Financial health</a></li>
+                        <li><a href="#">Stay informed</a></li>
+                    </ul>
+                </div>
+                 <!-- Column 3 -->
+                 <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Institute</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Media contacts</a></li>
+                         <li><a href="#">Help Center</a></li>
+                         <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Column 4 -->
+                <div class="footer-column">
+                    <h4>Related Sites</h4>
+                    <ul>
+                        <li><a href="#">Chase <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></li>
+                        <li><a href="#">J.P. Morgan <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></li>
+                        <li><a href="#">J.P. Morgan Research <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></li>
+                        <li><a href="#">Morgan Health <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></li>
+                        <li><a href="#">Alumni Network <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></li>
+                    </ul>
+                </div>
+                 <!-- Column 5: Connect -->
+                 <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                     <h4 style="margin-top: 25px;">Legal</h4>
+                     <ul>
+                         <li><a href="#">Privacy Policy</a></li>
+                         <li><a href="#">Terms of Use</a></li>
+                         <li><a href="#">Accessibility</a></li>
+                         <li><a href="#">Site Map</a></li>
+                     </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> JPMorgan Chase & Co. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
